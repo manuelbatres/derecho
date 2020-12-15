@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="utf-8"/>
+    <title>Contrato de Informacion</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<h1>Contrato de Informacion</h1>
+<p>Datos para el desarrollo del contrato</p>
+<form action="contratodeinformacion.php" method="post">
+    <div class="row">
+        <div class="col-8"><h2>Datos Empresa A</h2></div>
+    </div>
+    <div class="form-group row">
+        <label class="col-4 col-form-label" for="nombre_empresa">Nombre de la empresa</label> 
+        <div class="col-8">
+          <input id="nombre_empresa" name="nombre_empresa" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="direccion_empresa_calle" class="col-4 col-form-label">Direccion de la empresa (calle)</label> 
+        <div class="col-8">
+          <input id="direccion_empresa_calle" name="direccion_empresa_calle" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="direccion_empresa_num" class="col-4 col-form-label">Direccion de la empresa (numero)</label> 
+        <div class="col-8">
+          <input id="direccion_empresa_num" name="direccion_empresa_num" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="direccion_empresa_col" class="col-4 col-form-label">Direccion de la empresa (colonia)</label> 
+        <div class="col-8">
+          <input id="direccion_empresa_col" name="direccion_empresa_col" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="direccion_empresa_ciud" class="col-4 col-form-label">Direccion de la empresa (ciudad)</label> 
+        <div class="col-8">
+          <input id="direccion_empresa_ciud" name="direccion_empresa_ciud" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="direccion_empresa_cp" class="col-4 col-form-label">Direccion de la empresa (codigo postal)</label> 
+        <div class="col-8">
+          <input id="direccion_empresa_cp" name="direccion_empresa_cp" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="correo_electronico_emp" class="col-4 col-form-label">Correo electronico de la empresa</label> 
+        <div class="col-8">
+          <input id="correo_electronico_emp" name="correo_electronico_emp" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="nombre_del_rep" class="col-4 col-form-label">Nombre del representante</label> 
+        <div class="col-8">
+          <input id="nombre_del_rep" name="nombre_del_rep" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="cargo_del_rep" class="col-4 col-form-label">Cargo del representante</label> 
+        <div class="col-8">
+          <input id="cargo_del_rep" name="cargo_del_rep" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="direc_del_rep_cal" class="col-4 col-form-label">Direccion del representante (calle)</label> 
+        <div class="col-8">
+          <input id="direc_del_rep_cal" name="direc_del_rep_cal" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="direc_del_rep_num" class="col-4 col-form-label">Direccion del representante (numero)</label> 
+        <div class="col-8">
+          <input id="direc_del_rep_num" name="direc_del_rep_num" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="direc_del_rep_col" class="col-4 col-form-label">Direccion del representante (colonia)</label> 
+        <div class="col-8">
+          <input id="direc_del_rep_col" name="direc_del_rep_col" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="direc_del_rep_ciud" class="col-4 col-form-label">Direccion del representante (ciudad)</label> 
+        <div class="col-8">
+          <input id="direc_del_rep_ciud" name="direc_del_rep_ciud" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="direc_del_rep_cp" class="col-4 col-form-label">Direccion del representante (codigo postal)</label> 
+        <div class="col-8">
+          <input id="direc_del_rep_cp" name="direc_del_rep_cp" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="correo_elec_del_rep" class="col-4 col-form-label">Correo electronico del representante</label> 
+        <div class="col-8">
+          <input id="correo_elec_del_rep" name="correo_elec_del_rep" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="fec_nac_rep" class="col-4 col-form-label">Fecha de Nacimiento del representante</label> 
+        <div class="col-8">
+          <input id="fec_nac_rep" name="fec_nac_rep" type="date" class="form-control">
+        </div>
+      </div> 
+      <div class="form-group row">
+        <label for="lugar_nac_rep_calle" class="col-4 col-form-label">Lugar de nacimiento del representante (calle)</label> 
+        <div class="col-8">
+          <input id="lugar_nac_rep_calle" name="lugar_nac_rep_calle" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="lugar_nac_rep_num" class="col-4 col-form-label">Lugar de nacimiento del representante (numero)</label> 
+        <div class="col-8">
+          <input id="lugar_nac_rep_num" name="lugar_nac_rep_num" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="lugar_nac_rep_col" class="col-4 col-form-label">Lugar de nacimiento del representante (colonia)</label> 
+        <div class="col-8">
+          <input id="lugar_nac_rep_col" name="lugar_nac_rep_col" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="lugar_nac_rep_ciud" class="col-4 col-form-label">Lugar de nacimiento del representante (ciudad)</label> 
+        <div class="col-8">
+          <input id="lugar_nac_rep_ciud" name="lugar_nac_rep_ciud" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="lugar_nac_rep_cp" class="col-4 col-form-label">Lugar de nacimiento del representante (codigo postal)</label> 
+        <div class="col-8">
+          <input id="lugar_nac_rep_cp" name="lugar_nac_rep_cp" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="estado_civ_rep" class="col-4 col-form-label">Estado civil del representante</label> 
+        <div class="col-8">
+          <select id="estado_civ_rep" name="estado_civ_rep" required="required" class="custom-select">
+            <option value="soltero">Soltero</option>
+            <option value="casado">Casado</option>
+          </select>
+        </div>
+      </div> 
+      <div class="form-group row">
+        <label for="esc_rep" class="col-4 col-form-label">Escolaridad del representante</label> 
+        <div class="col-8">
+          <input id="esc_rep" name="esc_rep" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="nombre_pers_not" class="col-4 col-form-label">Nombre de persona para notificaciones</label> 
+        <div class="col-8">
+          <input id="nombre_pers_not" name="nombre_pers_not" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="direc_pers_not_calle" class="col-4 col-form-label">Direccion de persona para notificaciones (calle)</label> 
+        <div class="col-8">
+          <input id="direc_pers_not_calle" name="direc_pers_not_calle" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="direc_pers_not_num" class="col-4 col-form-label">Direccion de persona para notificaciones (numero)</label> 
+        <div class="col-8">
+          <input id="direc_pers_not_num" name="direc_pers_not_num" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="direc_pers_not_col" class="col-4 col-form-label">Direccion de persona para notificaciones (colonia)</label> 
+        <div class="col-8">
+          <input id="direc_pers_not_col" name="direc_pers_not_col" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="direc_pers_not_ciud" class="col-4 col-form-label">Direccion de persona para notificaciones (ciudad)</label> 
+        <div class="col-8">
+          <input id="direc_pers_not_ciud" name="direc_pers_not_ciud" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="direc_pers_not_cp" class="col-4 col-form-label">Direccion de persona para notificaciones (codigo postal)</label> 
+        <div class="col-8">
+          <input id="direc_pers_not_cp" name="direc_pers_not_cp" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="correo_elec_pers_not" class="col-4 col-form-label">Correo electronico de persona para notificaciones</label> 
+        <div class="col-8">
+          <input id="correo_elec_pers_not" name="correo_elec_pers_not" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="fec_nac_not" class="col-4 col-form-label">Fecha de Nacimiento de persona para notificaciones</label> 
+        <div class="col-8">
+          <input id="fec_nac_not" name="fec_nac_not" type="date" class="form-control">
+        </div>
+      </div> 
+      <div class="form-group row">
+        <label for="lugar_nac_not_calle" class="col-4 col-form-label">Lugar de nacimiento de persona para notificaciones (calle)</label> 
+        <div class="col-8">
+          <input id="lugar_nac_not_calle" name="lugar_nac_not_calle" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="lugar_nac_not_num" class="col-4 col-form-label">Lugar de nacimiento de persona para notificaciones (numero)</label> 
+        <div class="col-8">
+          <input id="lugar_nac_not_num" name="lugar_nac_not_num" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="lugar_nac_not_col" class="col-4 col-form-label">Lugar de nacimiento de persona para notificaciones (colonia)</label> 
+        <div class="col-8">
+          <input id="lugar_nac_not_col" name="lugar_nac_not_col" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="lugar_nac_not_ciud" class="col-4 col-form-label">Lugar de nacimiento de persona para notificaciones (ciudad)</label> 
+        <div class="col-8">
+          <input id="lugar_nac_not_ciud" name="lugar_nac_not_ciud" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="lugar_nac_not_cp" class="col-4 col-form-label">Lugar de nacimiento de persona para notificaciones (codigo postal)</label> 
+        <div class="col-8">
+          <input id="lugar_nac_not_cp" name="lugar_nac_not_cp" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="estado_civ_not" class="col-4 col-form-label">Estado civil de persona para notificaciones</label> 
+        <div class="col-8">
+          <select id="estado_civ_not" name="estado_civ_not" required="required" class="custom-select">
+            <option value="soltero">Soltero</option>
+            <option value="casado">Casado</option>
+          </select>
+        </div>
+      </div> 
+      <div class="form-group row">
+        <label for="esc_not" class="col-4 col-form-label">Escolaridad de persona para notificaciones</label> 
+        <div class="col-8">
+          <input id="esc_not" name="esc_not" type="text" class="form-control" required="required">
+        </div>
+      </div>
+    
+
+    <div class="col-8"><h2>Datos Empresa B</h2></div>
+    <div class="form-group row">
+        <label class="col-4 col-form-label_b" for="nombre_empresa_b">Nombre de la empresa</label> 
+        <div class="col-8">
+          <input id="nombre_empresa_b" name="nombre_empresa_b" type="text" class="form-control_b" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="direccion_empresa_calle_b" class="col-4 col-form-label_b">Direccion de la empresa (calle)</label> 
+        <div class="col-8">
+          <input id="direccion_empresa_calle_b" name="direccion_empresa_calle_b" type="text" class="form-control_b" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="direccion_empresa_num_b" class="col-4 col-form-label_b">Direccion de la empresa (numero)</label> 
+        <div class="col-8">
+          <input id="direccion_empresa_num_b" name="direccion_empresa_num_b" type="text" class="form-control_b" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="direccion_empresa_col_b" class="col-4 col-form-label_b">Direccion de la empresa (colonia)</label> 
+        <div class="col-8">
+          <input id="direccion_empresa_col_b" name="direccion_empresa_col_b" type="text" class="form-control_b" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="direccion_empresa_ciud_b" class="col-4 col-form-label_b">Direccion de la empresa (ciudad)</label> 
+        <div class="col-8">
+          <input id="direccion_empresa_ciud_b" name="direccion_empresa_ciud_b" type="text" class="form-control_b" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="direccion_empresa_cp_b" class="col-4 col-form-label_b">Direccion de la empresa (codigo postal)</label> 
+        <div class="col-8">
+          <input id="direccion_empresa_cp_b" name="direccion_empresa_cp_b" type="text" class="form-control_b" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="correo_electronico_emp_b" class="col-4 col-form-label_b">Correo electronico de la empresa</label> 
+        <div class="col-8">
+          <input id="correo_electronico_emp_b" name="correo_electronico_emp_b" type="text" class="form-control_b" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="nombre_del_rep_b" class="col-4 col-form-label_b">Nombre del representante</label> 
+        <div class="col-8">
+          <input id="nombre_del_rep_b" name="nombre_del_rep_b" type="text" class="form-control_b" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="cargo_del_rep_b" class="col-4 col-form-label_b">Cargo del representante</label> 
+        <div class="col-8">
+          <input id="cargo_del_rep_b" name="cargo_del_rep_b" type="text" class="form-control_b" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="direc_del_rep_cal_b" class="col-4 col-form-label_b">Direccion del representante (calle)</label> 
+        <div class="col-8">
+          <input id="direc_del_rep_cal_b" name="direc_del_rep_cal_b" type="text" class="form-control_b" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="direc_del_rep_num_b" class="col-4 col-form-label_b">Direccion del representante (numero)</label> 
+        <div class="col-8">
+          <input id="direc_del_rep_num_b" name="direc_del_rep_num_b" type="text" class="form-control_b" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="direc_del_rep_col_b" class="col-4 col-form-label_b">Direccion del representante (colonia)</label> 
+        <div class="col-8">
+          <input id="direc_del_rep_col_b" name="direc_del_rep_col_b" type="text" class="form-control_b" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="direc_del_rep_ciud_b" class="col-4 col-form-label_b">Direccion del representante (ciudad)</label> 
+        <div class="col-8">
+          <input id="direc_del_rep_ciud_b" name="direc_del_rep_ciud_b" type="text" class="form-control_b" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="direc_del_rep_cp_b" class="col-4 col-form-label_b">Direccion del representante (codigo postal)</label> 
+        <div class="col-8">
+          <input id="direc_del_rep_cp_b" name="direc_del_rep_cp_b" type="text" class="form-control_b" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="correo_elec_del_rep_b" class="col-4 col-form-label_b">Correo electronico del representante</label> 
+        <div class="col-8">
+          <input id="correo_elec_del_rep_b" name="correo_elec_del_rep_b" type="text" class="form-control_b" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="fec_nac_rep_b" class="col-4 col-form-label_b">Fecha de Nacimiento del representante</label> 
+        <div class="col-8">
+          <input id="fec_nac_rep_b" name="fec_nac_rep_b" type="date" class="form-control_b">
+        </div>
+      </div> 
+      <div class="form-group row">
+        <label for="lugar_nac_rep_calle_b" class="col-4 col-form-label_b">Lugar de nacimiento del representante (calle)</label> 
+        <div class="col-8">
+          <input id="lugar_nac_rep_calle_b" name="lugar_nac_rep_calle_b" type="text" class="form-control_b" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="lugar_nac_rep_num_b" class="col-4 col-form-label_b">Lugar de nacimiento del representante (numero)</label> 
+        <div class="col-8">
+          <input id="lugar_nac_rep_num_b" name="lugar_nac_rep_num_b" type="text" class="form-control_b" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="lugar_nac_rep_col_b" class="col-4 col-form-label_b">Lugar de nacimiento del representante (colonia)</label> 
+        <div class="col-8">
+          <input id="lugar_nac_rep_col_b" name="lugar_nac_rep_col_b" type="text" class="form-control_b" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="lugar_nac_rep_ciud_b" class="col-4 col-form-label_b">Lugar de nacimiento del representante (ciudad)</label> 
+        <div class="col-8">
+          <input id="lugar_nac_rep_ciud_b" name="lugar_nac_rep_ciud_b" type="text" class="form-control_b" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="lugar_nac_rep_cp_b" class="col-4 col-form-label_b">Lugar de nacimiento del representante (codigo postal)</label> 
+        <div class="col-8">
+          <input id="lugar_nac_rep_cp_b" name="lugar_nac_rep_cp_b" type="text" class="form-control_b" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="estado_civ_rep_b" class="col-4 col-form-label_b">Estado civil del representante</label> 
+        <div class="col-8">
+          <select id="estado_civ_rep_b" name="estado_civ_rep_b" required="required" class="custom-select_b">
+            <option value="soltero">Soltero</option>
+            <option value="casado">Casado</option>
+          </select>
+        </div>
+      </div> 
+      <div class="form-group row">
+        <label for="esc_rep_b" class="col-4 col-form-label_b">Escolaridad del representante</label> 
+        <div class="col-8">
+          <input id="esc_rep_b" name="esc_rep_b" type="text" class="form-control_b" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="nombre_pers_not_b" class="col-4 col-form-label_b">Nombre de persona para notificaciones</label> 
+        <div class="col-8">
+          <input id="nombre_pers_not_b" name="nombre_pers_not_b" type="text" class="form-control_b" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="direc_pers_not_calle_b" class="col-4 col-form-label_b">Direccion de persona para notificaciones (calle)</label> 
+        <div class="col-8">
+          <input id="direc_pers_not_calle_b" name="direc_pers_not_calle_b" type="text" class="form-control_b" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="direc_pers_not_num_b" class="col-4 col-form-label_b">Direccion de persona para notificaciones (numero)</label> 
+        <div class="col-8">
+          <input id="direc_pers_not_num_b" name="direc_pers_not_num_b" type="text" class="form-control_b" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="direc_pers_not_col_b" class="col-4 col-form-label_b">Direccion de persona para notificaciones (colonia)</label> 
+        <div class="col-8">
+          <input id="direc_pers_not_col_b" name="direc_pers_not_col_b" type="text" class="form-control_b" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="direc_pers_not_ciud_b" class="col-4 col-form-label_b">Direccion de persona para notificaciones (ciudad)</label> 
+        <div class="col-8">
+          <input id="direc_pers_not_ciud_b" name="direc_pers_not_ciud_b" type="text" class="form-control_b" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="direc_pers_not_cp_b" class="col-4 col-form-label_b">Direccion de persona para notificaciones (codigo postal)</label> 
+        <div class="col-8">
+          <input id="direc_pers_not_cp_b" name="direc_pers_not_cp_b" type="text" class="form-control_b" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="correo_elec_pers_not_b" class="col-4 col-form-label_b">Correo electronico de persona para notificaciones</label> 
+        <div class="col-8">
+          <input id="correo_elec_pers_not_b" name="correo_elec_pers_not_b" type="text" class="form-control_b" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="fec_nac_not_b" class="col-4 col-form-label_b">Fecha de Nacimiento de persona para notificaciones</label> 
+        <div class="col-8">
+          <input id="fec_nac_not_b" name="fec_nac_not_b" type="date" class="form-control_b">
+        </div>
+      </div> 
+      <div class="form-group row">
+        <label for="lugar_nac_not_calle_b" class="col-4 col-form-label_b">Lugar de nacimiento de persona para notificaciones (calle)</label> 
+        <div class="col-8">
+          <input id="lugar_nac_not_calle_b" name="lugar_nac_not_calle_b" type="text" class="form-control_b" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="lugar_nac_not_num_b" class="col-4 col-form-label_b">Lugar de nacimiento de persona para notificaciones (numero)</label> 
+        <div class="col-8">
+          <input id="lugar_nac_not_num_b" name="lugar_nac_not_num_b" type="text" class="form-control_b" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="lugar_nac_not_col_b" class="col-4 col-form-label_b">Lugar de nacimiento de persona para notificaciones (colonia)</label> 
+        <div class="col-8">
+          <input id="lugar_nac_not_col_b" name="lugar_nac_not_col_b" type="text" class="form-control_b" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="lugar_nac_not_ciud_b" class="col-4 col-form-label_b">Lugar de nacimiento de persona para notificaciones (ciudad)</label> 
+        <div class="col-8">
+          <input id="lugar_nac_not_ciud_b" name="lugar_nac_not_ciud_b" type="text" class="form-control_b" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="lugar_nac_not_cp_b" class="col-4 col-form-label_b">Lugar de nacimiento de persona para notificaciones (codigo postal)</label> 
+        <div class="col-8">
+          <input id="lugar_nac_not_cp_b" name="lugar_nac_not_cp_b" type="text" class="form-control_b" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="estado_civ_not_b" class="col-4 col-form-label_b">Estado civil de persona para notificaciones</label> 
+        <div class="col-8">
+          <select id="estado_civ_not_b" name="estado_civ_not_b" required="required" class="custom-select_b">
+            <option value="soltero">Soltero</option>
+            <option value="casado">Casado</option>
+          </select>
+        </div>
+      </div> 
+      <div class="form-group row">
+        <label for="esc_not_b" class="col-4 col-form-label_b">Escolaridad de persona para notificaciones</label> 
+        <div class="col-8">
+          <input id="esc_not_b" name="esc_not_b" type="text" class="form-control_b" required="required">
+        </div>
+      </div>
+
+
+        <div class="col-8"><h2>Datos del contrato</h2></div>
+      </div>
+      <div class="form-group row">
+        <label for="breve_desc" class="col-4 col-form-label">Breve descripcion</label> 
+        <div class="col-8">
+          <textarea id="breve_desc" name="breve_desc" cols="40" rows="5" aria-describedby="propiedadHelpBlock" class="form-control" required="required"></textarea> 
+          <span id="propiedadHelpBlock" class="form-text text-muted">Breve descripcion del contrato</span>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="fecha_firm_cont" class="col-4 col-form-label">Fecha de firma de contrato</label> 
+        <div class="col-8">
+          <input id="fecha_firm_cont" name="fecha_firm_cont" type="date" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="fecha_ini_cont" class="col-4 col-form-label">Fecha del inicio del contrato</label> 
+        <div class="col-8">
+          <input id="fecha_ini_cont" name="fecha_ini_cont" type="date" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="fecha_fin_cont" class="col-4 col-form-label">Fecha del fin del contrato</label> 
+        <div class="col-8">
+          <input id="fecha_fin_cont" name="fecha_fin_cont" type="date" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="costo" class="col-4 col-form-label">Costo</label> 
+        <div class="col-8">
+          <input id="costo" name="costo" type="number" min="1" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="costo_letras" class="col-4 col-form-label">Costo (letras)</label> 
+        <div class="col-8">
+          <input id="costo_letras" name="costo_letras" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="fec_pago" class="col-4 col-form-label">Fecha del pago</label> 
+        <div class="col-8">
+          <input id="fec_pago" name="fec_pago" type="date" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="offset-4 col-8">
+          <button name="submit" type="submit" class="btn btn-primary">Generar Contrato</button>
+        </div>
+      </div>
+</form>
+</body>
+</html> 
