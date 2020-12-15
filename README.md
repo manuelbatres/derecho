@@ -28,3 +28,7 @@ $user = (isset($_SESSION['user_id'])) ? ['user' => $_SESSION['user_id'], 'email'
 ```
 
 > Si no hay usuario logueado el array será nulo.
+
+La libreria  fpdf link de descarga
+
+https://drive.google.com/drive/folders/18SO8ps5ApwKVh8z3jAO6bkbz1_RQL9dE?usp=sharing
