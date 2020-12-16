@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="utf-8"/>
+    <title>Contrato Licencia de Uso</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<h1>Contrato de Licencia de Uso</h1>
+<p>Por favor llene correctamente los datos que a continuación se le solicitan.</p>
+<form action="licenciadeuso.php" method="post">
+
+  <!-- LICENCIANTE-->
+    <div class="row">
+        <div class="col-8"><h2>Datos del Licenciante</h2></div>
+    </div>
+    <div class="form-group row">
+        <label class="col-4 col-form-label" for="nombre">Nombre</label> 
+        <div class="col-8">
+          <input id="nombre" name="nombre" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="nacionalidad" class="col-4 col-form-label">Nacionalidad</label> 
+        <div class="col-8">
+          <input id="nacionalidad" name="nacionalidad" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="fnac" class="col-4 col-form-label">Fecha de Nacimiento</label> 
+        <div class="col-8">
+          <input id="fnac" name="fnac" type="date" class="form-control">
+        </div>
+      </div> 
+      <div class="form-group row">
+        <label for="lnac" class="col-4 col-form-label">Lugar de Nacimiento</label> 
+        <div class="col-8">
+          <input id="lnac" name="lnac" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="estado" class="col-4 col-form-label">Estado civil</label> 
+        <div class="col-8">
+          <select id="estado" name="estado" required="required" class="custom-select">
+            <option value="soltero">Soltero</option>
+            <option value="casado">Casado</option>
+          </select>
+        </div>
+      </div> 
+      <div class="form-group row">
+        <label for="ocupacion" class="col-4 col-form-label">Ocupación<nav></nav></label> 
+        <div class="col-8">
+          <input id="ocupacion" name="ocupacion" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="esc" class="col-4 col-form-label">Escolaridad</label> 
+        <div class="col-8">
+          <input id="esc" name="esc" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="calle" class="col-4 col-form-label">Calle</label> 
+        <div class="col-8">
+          <input id="calle" name="calle" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="num" class="col-4 col-form-label">Número</label> 
+        <div class="col-8">
+          <input id="num" name="num" type="number" min="1" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="frac" class="col-4 col-form-label">Fraccionamiento</label> 
+        <div class="col-8">
+          <input id="frac" name="frac" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="cp" class="col-4 col-form-label">Código Postal</label> 
+        <div class="col-8">
+          <input id="cp" name="cp" type="number" min="10000" max="99999" class="form-control" required="required">
+        </div>
+      </div>
+ <!-- LICENCIANTE-->
+
+
+
+
+  <!-- LICENCIATARIO-->
+      <div class="row">
+        <div class="col-8"><h2>Datos del Licenciatario</h2></div>
+    </div>
+    <div class="form-group row">
+        <label class="col-4 col-form-label" for="nombre2">Nombre</label> 
+        <div class="col-8">
+          <input id="nombre2" name="nombre2" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="nacionalidad2" class="col-4 col-form-label">Nacionalidad</label> 
+        <div class="col-8">
+          <input id="nacionalidad2" name="nacionalidad2" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="fnac2" class="col-4 col-form-label">Fecha de Nacimiento</label> 
+        <div class="col-8">
+          <input id="fnac2" name="fnac2" type="date" class="form-control">
+        </div>
+      </div> 
+      <div class="form-group row">
+        <label for="lnac2" class="col-4 col-form-label">Lugar de Nacimiento</label> 
+        <div class="col-8">
+          <input id="lnac2" name="lnac2" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="estado2" class="col-4 col-form-label">Estado civil</label> 
+        <div class="col-8">
+          <select id="estado2" name="estado2" required="required" class="custom-select">
+            <option value="soltero">Soltero</option>
+            <option value="casado">Casado</option>
+          </select>
+        </div>
+      </div> 
+      <div class="form-group row">
+        <label for="ocupacion2" class="col-4 col-form-label">Ocupación<nav></nav></label> 
+        <div class="col-8">
+          <input id="ocupacion2" name="ocupacion2" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="esc2" class="col-4 col-form-label">Escolaridad</label> 
+        <div class="col-8">
+          <input id="esc2" name="esc2" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="calle2" class="col-4 col-form-label">Calle</label> 
+        <div class="col-8">
+          <input id="calle2" name="calle2" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="num2" class="col-4 col-form-label">Número</label> 
+        <div class="col-8">
+          <input id="num2" name="num2" type="number" min="1" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="frac2" class="col-4 col-form-label">Fraccionamiento</label> 
+        <div class="col-8">
+          <input id="frac2" name="frac2" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="cp2" class="col-4 col-form-label">Código Postal</label> 
+        <div class="col-8">
+          <input id="cp2" name="cp2" type="number" min="10000" max="99999" class="form-control" required="required">
+        </div>
+      </div>  
+ <!-- LICENCIATARIO-->
+
+
+
+ <!-- LICENCIA-->
+      <div class="row">
+        <div class="col-8"><h2>Datos de la Licencia</h2></div>
+      </div>
+      <div class="form-group row">
+        <label for="tipo" class="col-4 col-form-label">Tipo de Licencia</label> 
+        <div class="col-8">
+          <input id="tipo" name="tipo" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="espec" class="col-4 col-form-label">Especificación de licencia</label> 
+        <div class="col-8">
+          <textarea id="espec" name="espec" cols="40" rows="5" aria-describedby="especHelpBlock" class="form-control" required="required"></textarea> 
+          <span id="especHelpBlock" class="form-text text-muted">Fecha de Inicio y Duración</span>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="costo" class="col-4 col-form-label">Costo</label> 
+        <div class="col-8">
+          <input id="costo" name="costo" type="number" min="1" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="costoletras" class="col-4 col-form-label">Costo (letras)</label> 
+        <div class="col-8">
+          <input id="costoletras" name="costoletras" type="text" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="fecha" class="col-4 col-form-label">Fecha del acuerdo de Licencia</label> 
+        <div class="col-8">
+          <input id="fecha" name="fecha" type="date" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="fpago" class="col-4 col-form-label">Forma de Pago del costo</label> 
+        <div class="col-8">
+          <input id="fpago" name="fpago" type="date" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="fcreacion" class="col-4 col-form-label">Fecha de Creacion</label> 
+        <div class="col-8">
+          <input id="fcreacion" name="fentrega" type="date" class="form-control" required="required">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="intereses" class="col-4 col-form-label">Pago de intereses</label> 
+        <div class="col-8">
+          <textarea id="intereses" name="intereses" cols="40" rows="5" aria-describedby="interesesHelpBlock" class="form-control"></textarea> 
+          <span id="interesesHelpBlock" class="form-text text-muted">Descripción sobre los intereses (en caso de que los haya)</span>
+        </div>
+      </div> 
+      <div class="form-group row">
+        <div class="offset-4 col-8">
+          <button name="submit" type="submit" class="btn btn-primary">Generar Contrato</button>
+        </div>
+      </div>
+ <!-- LICENCIA-->
+</form>
+</body>
+</html> 
