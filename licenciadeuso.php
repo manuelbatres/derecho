@@ -36,7 +36,7 @@
     $costoletras=$_POST['costoletras'];
     $fecha=$_POST['fecha'];
     $fpago=$_POST['fpago'];
-    $fentrega=$_POST['fcreacion'];
+    $fentrega=$_POST['fentrega'];
     $intereses=$_POST['intereses'];
     /////////////////LICENCIA////////////////
 
@@ -217,7 +217,7 @@
     $txt="";
     $PDF->multicell(180,4,$txt);//Opción 1 para escribir, concatenar todo en una variable y sólo mandar imprimir la variable
     $PDF->setFont("Arial", '', 11);
-    $txt ="10.  El precio por la cesión de la licencia de uso del programa informático ".$nombre." y sus servicios es de ".$precio." $ anuales, que se podrán pagar a los 15 días de la firma del contrato, mediante el pago en la cuenta bancaria que señale el licenciante, excluido el IVA/IGIC.";
+    $txt ="10.  El precio por la cesión de la licencia de uso del programa informático ".$nombre." y sus servicios es de ".$costo." $ anuales, que se podrán pagar a los 15 días de la firma del contrato, mediante el pago en la cuenta bancaria que señale el licenciante, excluido el IVA/IGIC.";
     $PDF->multicell(180,4,$txt);//Opción 1 para escribir, concatenar todo en una variable y sólo mandar imprimir la variable
     $PDF->setFont("Arial", '', 11);
     $txt="Para el caso de renovación del contrato, el precio se actualizará conforme a las variaciones que experimente el IPC durante el año anterior.";
@@ -236,7 +236,6 @@
     $PDF->multicell(180,4,$txt);//Opción 1 para escribir, concatenar todo en una variable y sólo mandar imprimir la variable
     $PDF->setFont("Arial", '', 11);
     $txt="12. Al usar la funcionalidad de e-sign para los contratos electrónicos, las partes acuerdan que este contrato es la copia original y que les vincula legalmente. Las partes recibirán un e-mail cuando este contrato haya sido firmado y formalizado por las mismas, sirviendo como prueba de su completa validez legal.
-
 Y como prueba de lo convenido ambos firman el presente contrato por duplicado.
 ";
 $PDF->multicell(180,4,$txt);//Opción 1 para escribir, concatenar todo en una variable y sólo mandar imprimir la variable
@@ -244,10 +243,10 @@ $PDF->setFont("Arial", '', 11);
 
 
 
-    $PDF->multicell(0, 10, "El Vendedor",0,"C",false);
+    $PDF->multicell(0, 8, "El Vendedor",0,"C",false);
     $PDF->multicell(0, 10, "__________________________________________",0,"C",false);
     $PDF->multicell(0, 10, "_____________________________",0,"C",false);
-    $PDF->multicell(0, 10, "El Comprador",0,"C",false);
+    $PDF->multicell(0, 5, "El Comprador",0,"C",false);
     $PDF->multicell(0, 10, "__________________________________________",0,"C",false);
     $PDF->multicell(0, 10, "_____________________________",0,"C",false);
     $PDF->output();
